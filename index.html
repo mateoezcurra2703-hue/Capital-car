@@ -247,6 +247,15 @@ footer{background:var(--void);border-top:1px solid var(--border);padding:38px 52
 .sv:hover .sv-arr{transform:translateX(6px)}
 .cc:hover .cc-price{color:var(--red)}
 .cc-price{transition:color .2s}
+
+/* ── NO ENCONTRASTE ── */
+.no-encontraste{background:#141414;padding:36px 40px;text-align:center;border-top:1px solid #222;border-bottom:1px solid #222}
+.nef-inner{max-width:700px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+.nef-title{font-family:var(--fb);font-size:16px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#888;margin:0}
+.nef-title em{font-style:normal;color:#aaa}
+.nef-tag,.nef-sub{display:none}
+.nef-cta{display:inline-block;padding:10px 24px;border:1px solid #444;color:#999;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:border-color .2s,color .2s}
+.nef-cta:hover{border-color:#888;color:#ccc}
 </style>
 </head>
 <body>
@@ -294,7 +303,7 @@ footer{background:var(--void);border-top:1px solid var(--border);padding:38px 52
     <div class="hero-sep"></div>
     <p class="hero-desc">La concesionaria de confianza. Compramos, vendemos y financiamos sin vueltas. M&aacute;s de 500 entregas, hasta el 100% de financiamiento disponible.</p>
     <div class="hero-btns">
-      <a href="#inventario" class="btn-red">Ver Inventario</a>
+      <a href="#inventario" class="btn-red">Ver vehículos disponibles</a>
       <a href="#contacto" class="btn-ghost">Hablar con un asesor</a>
     </div>
   </div>
@@ -384,6 +393,14 @@ footer{background:var(--void);border-top:1px solid var(--border);padding:38px 52
 
 
 <!-- CONTACTO -->
+<section class="sec no-encontraste">
+  <div class="nef-inner">
+    <h2 class="nef-title rv">¿No encontraste el vehículo que buscabas? <em>Completá el formulario.</em> Nosotros te avisamos apenas ingrese.</h2>
+    <p class="nef-sub rv">Completá el formulario y te avisamos en cuanto ingrese un vehículo que coincida con lo que buscás.</p>
+    <a class="nef-cta rv" href="#contacto">Completar formulario →</a>
+  </div>
+</section>
+
 <section class="sec contact" id="contacto">
   <div class="contact-inner">
     <div class="rv-l">
